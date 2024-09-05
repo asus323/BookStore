@@ -1,0 +1,3 @@
+﻿in folder baraye in sakhte shode ke beine app va database ertebat barqarar kone va dastorate lazem ba Orm ha ro behesh midim ke dg
+be SQL query ha niaz nadashte bashim
+dar vaqe in layer ya folder baraye query ha hast
