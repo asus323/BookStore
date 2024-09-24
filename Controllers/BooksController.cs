@@ -25,7 +25,7 @@ namespace BookStore.Controllers
         //sql query
         //ORM 
         //Object relational Mapper
-        //Ef core 
+        //Ef core  
         //dapper
         //ADO.Net
         //Route: api/books
@@ -46,7 +46,7 @@ namespace BookStore.Controllers
             return Ok(book);
         }
         [HttpPost]
-        public async Task<IActionResult> CreatBook([FromBody]CreatBookDto model)
+        public async Task<IActionResult> CreateBook([FromBody]CreatBookDto model)
         {
             var id =await _bookStoreRepository.CreatBook(model);
             return Ok(id);

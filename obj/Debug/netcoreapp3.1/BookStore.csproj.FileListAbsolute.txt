@@ -31,3 +31,4 @@ C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.Entity
 C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

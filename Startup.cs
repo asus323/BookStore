@@ -8,6 +8,7 @@ using BookStore.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -31,7 +32,11 @@ namespace BookStore
         {
             services.AddControllers();
             services.AddTransient<IBookStoreRepository, BookStoreRepository>();
+            services.AddTransient<IAccountRepository, AccountRepository>();
             services.AddDbContext<BookStoreContext>(options=>options.UseNpgsql(Configuration.GetConnectionString("BookStoreConnectionString")));
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<BookStoreContext>()
+                .AddDefaultTokenProviders();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bookstore api", Version = "v1" });
