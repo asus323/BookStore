@@ -1,4 +1,4 @@
-﻿namespace BookStore.Model
+﻿namespace BookStore.Model.Book
 {
     public class UpdateBookDto
     {

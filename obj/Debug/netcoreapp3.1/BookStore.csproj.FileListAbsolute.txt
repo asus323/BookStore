@@ -19,7 +19,6 @@ C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.MvcApp
 C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\staticwebassets\BookStore.StaticWebAssets.Manifest.cache
 C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.RazorTargetAssemblyInfo.cache
-C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.csproj.CopyComplete
 C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.dll
 C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.pdb
 C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.genruntimeconfig.cache
@@ -32,3 +31,18 @@ C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Npgsql.dll
 C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.sourcelink.json
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\staticwebassets\BookStore.StaticWebAssets.Pack.cache
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.BookStore.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.BookStore.props
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.BookStore.props
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.BookStore.props
+C:\Users\Mehdi Hajati\Desktop\BookStore\obj\Debug\netcoreapp3.1\BookStore.csproj.Up2Date

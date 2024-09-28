@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using BookStore.Interfaces;
 using BookStore.Model;
+using BookStore.Model.Account;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStore.Controllers
@@ -24,6 +25,18 @@ namespace BookStore.Controllers
             }
 
             return BadRequest(result.Errors.Select(x=>x.Description));
+        }
+        /* Login */
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDTO loginDto)
+        {
+            var result = await _accountRepository.Login(loginDto);
+            if (string.IsNullOrEmpty(result))
+            {
+                return Unauthorized();
+            }
+
+            return Ok(result);
         }
     }
 }

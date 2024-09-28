@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using BookStore.Model;
+using BookStore.Model.Book;
 
 namespace BookStore.Interfaces
 {

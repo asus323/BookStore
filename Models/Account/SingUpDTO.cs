@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BookStore.Model
+namespace BookStore.Model.Account
 {
     public class SingUpDTO
     {
