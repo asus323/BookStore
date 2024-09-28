@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using BookStore.Validations;
 
-namespace BookStore.Model
+namespace BookStore.Model.Book
 {
     public class CreatBookDto
     {

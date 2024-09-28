@@ -4,7 +4,7 @@
  * Ye zarfe baraye enteghale dadeha be samte karbat
  * asan shayad karbar ye chizi ro nabayad bebine
  */
-namespace BookStore.Model
+namespace BookStore.Model.Book
 {
     public class BookDetailsDTO
     {

@@ -16,6 +16,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.Text;
 namespace BookStore
 {
     public class Startup
@@ -37,9 +40,45 @@ namespace BookStore
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<BookStoreContext>()
                 .AddDefaultTokenProviders();
-            services.AddSwaggerGen(c =>
+            services.AddAuthentication(
+                options =>{
+                            options.DefaultAuthenticateScheme =JwtBearerDefaults.AuthenticationScheme;
+                            options.DefaultChallengeScheme =JwtBearerDefaults.AuthenticationScheme;
+                            options.DefaultScheme =JwtBearerDefaults.AuthenticationScheme;
+                        }).AddJwtBearer(
+                            opt=>{
+                            opt.SaveToken =true;
+                            opt.RequireHttpsMetadata = false;
+                            opt.TokenValidationParameters = new TokenValidationParameters(){
+                                    ValidateIssuer =true,
+                                    ValidateAudience = true,
+                                    ValidIssuer =Configuration["Jwt:ValidIssuer"],
+                                    ValidAudience=Configuration["Jwt:ValidAudiance"],
+                                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Secret"]))
+                            };
+                        });
+            services.AddSwaggerGen(conf =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bookstore api", Version = "v1" });
+                conf.SwaggerDoc("v1", new OpenApiInfo { Title = "Bookstore api", Version = "v1" });
+                conf.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme{
+                    In =ParameterLocation.Header,
+                    Description= "Please Enter JWT token here",
+                    Name = "Authorization",
+                    Type= SecuritySchemeType.ApiKey
+                });
+                conf.AddSecurityRequirement(new OpenApiSecurityRequirement{
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type =ReferenceType.SecurityScheme,
+                                Id ="Bearer"
+                            }
+                        },
+                        new string[]{}
+                    }
+                });
             });
         }
 
@@ -54,7 +93,7 @@ namespace BookStore
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

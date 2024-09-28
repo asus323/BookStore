@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookStore.Data;
 using BookStore.Interfaces;
-using BookStore.Model;
+using BookStore.Model.Book;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.Repository
